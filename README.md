@@ -1,7 +1,8 @@
 # Life-Sim
 A project inspired Hunar4321's Life Simulation Project. 
 
-# Website Link: [lifesim.xyz](http://lifesim.xyz)
+## Website Link: 
+[lifesim.xyz](http://lifesim.xyz)
 
 ***!minor warning!***
 
@@ -11,7 +12,7 @@ A project inspired Hunar4321's Life Simulation Project.
 - GUIs 
 - Customizable colors based on HEX color codes
 
-## Code as follows:
+### Code as follows:
 
 ```javascript
 // the speed of particles attracting to each other. Negatives makes them attract, Positive repels.

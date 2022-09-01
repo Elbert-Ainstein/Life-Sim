@@ -1,6 +1,6 @@
 # Life-Sim
 A project inspired Hunar4321's Life Simulation Project. 
-Website Link:[lifesim.xyz](http://lifesim.xyz)
+Website Link: [lifesim.xyz](http://lifesim.xyz)
 
 ***!minor warning!***
 

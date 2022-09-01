@@ -4,13 +4,16 @@ A project inspired Hunar4321's Life Simulation Project.
 ## Website Link: 
 [lifesim.xyz](http://lifesim.xyz)
 
-***!minor warning!***
 
->Js uses a lot of ram, so be cautious when experimenting with great numbers of particles.
+#### ***!minor warning!***
 
-## Features to be made soon:
-- GUIs 
-- Customizable colors based on HEX color codes
+>Js uses a lot of ram, so be cautious when experimenting with great numbers of particles when you clone this repo.
+>
+>Also, since I have not added the GUI, consider not opening the link as there are 5k particles ready to consume your RAM.
+
+> ### Features to be made soon:
+> - GUIs 
+> - Customizable colors based on HEX color codes
 
 ### Code as follows:
 

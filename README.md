@@ -1,6 +1,10 @@
 # Life-Sim
 A project inspired Hunar4321's Life Simulation Project. 
 
+!minor warning!
+
+Js uses a lot of ram, so be cautious when experimenting with great numbers of particles.
+
 ## Features to be made soon:
 - GUIs 
 - Customizable colors based on HEX color codes

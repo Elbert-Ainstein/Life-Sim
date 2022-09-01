@@ -10,7 +10,7 @@ A project inspired Hunar4321's Life Simulation Project.
 ```javascript
 const RULES = {
     white: {
-      white: -0.0365,
+      white: -0.0365,    
       red: 0.063,
       yellow: 0.0365,
       blue: -0.034,

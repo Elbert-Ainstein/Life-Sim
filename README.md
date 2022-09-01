@@ -2,6 +2,7 @@
 A project inspired Hunar4321's Life Simulation Project. 
 
 !minor warning!
+[Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
 
 Js uses a lot of ram, so be cautious when experimenting with great numbers of particles.
 

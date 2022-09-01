@@ -1,8 +1,8 @@
 # Life-Sim
 A project inspired Hunar4321's Life Simulation Project. 
+Website Link:[lifesim.xyz](http://lifesim.xyz)
 
-!minor warning!
-[Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
+***!minor warning!***
 
 Js uses a lot of ram, so be cautious when experimenting with great numbers of particles.
 

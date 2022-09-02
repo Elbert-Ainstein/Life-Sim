@@ -1,17 +1,24 @@
 # Life-Sim
 A project inspired Hunar4321's Life Simulation Project. 
 
-!minor warning!
+## Website Link: 
+[lifesim.xyz](http://lifesim.xyz)
 
-Js uses a lot of ram, so be cautious when experimenting with great numbers of particles.
 
-## Features to be made soon:
-- GUIs 
-- Customizable colors based on HEX color codes
+#### ***!minor warning!***
 
-## Code as follows:
+>Js uses a lot of ram, so be cautious when experimenting with great numbers of particles when you clone this repo.
+>
+>Also, since I have not added the GUI, consider not opening the link as there are 5k particles ready to consume your RAM.
+
+> ### Features to be made soon:
+> - GUIs 
+> - Customizable colors based on HEX color codes
+
+### Code as follows:
 
 ```javascript
+// the speed of particles attracting to each other. Negatives makes them attract, Positive repels.
 const RULES = {
     white: {
       white: -0.0365,    
@@ -86,12 +93,17 @@ const RULES = {
     m.fillRect(x, y, s, s);
   };
   const atoms = [];
+  
+  //atom property
   const atom = (x, y, c) => {
     return { x: x, y: y, vx: 0, vy: 0, color: c };
   };
+  
   const random = () => {
     return Math.random() * (canvas.height - 100) + 50;
   };
+  
+  //creating atoms
   const create = (number, color) => {
     for (let i = 0; i < number; i++) {
       atoms.push(atom(random()+(canvas.width / 4), random(), color));

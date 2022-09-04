@@ -11,28 +11,28 @@
     <script>
       const RULES = {
         white: {
-          white: -0.0365,
-          red: 0.063,
-          yellow: 0.0365,
-          blue: -0.034,
+          white: -0.365,
+          red: 0.63,
+          yellow: 0.365,
+          blue: -0.34,
         },
         red: {
-          white: -0.063,
-          red: -0.0295,
-          yellow: 0.031,
-          blue: -0.009,
+          white: -0.63,
+          red: -0.295,
+          yellow: 0.31,
+          blue: -0.09,
         },
         yellow: {
-          white: -0.0695,
-          red: 0.004,
-          yellow: 0.004,
-          blue: -0.05,
+          white: -0.695,
+          red: 0.04,
+          yellow: 0.04,
+          blue: -0.5,
         },
         blue: {
-          white: 0.018,
-          red: -0.053,
-          yellow: 0.0685,
-          blue: -0.05,
+          white: 0.18,
+          red: -0.53,
+          yellow: 0.685,
+          blue: -0.5,
         },
       };
 
@@ -140,7 +140,11 @@
         }
       };
       const gui = () => {
-        return new HTMLDivElement
+        const newDiv = document.createElement("div");
+        const newContent = document.createTextNode("Hi there and greetings!");
+        newDiv.appendChild(newContent);
+        const currentDiv = document.getElementById("div1");
+        document.body.insertBefore(newDiv, currentDiv);
       }
       create(1000, "yellow");
       create(1000, "red");
@@ -155,10 +159,11 @@
         }
         requestAnimationFrame(update);
       };
+      
       update();
     </script>
+    <div id="div1">
 
-
-
+    </div>
 </body>
 </html>

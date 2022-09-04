@@ -6,7 +6,7 @@
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <canvas id="life" width="2800" height="1400">
+    <canvas id="life" height="1600" width="2560">
     </canvas>
     <script>
       const RULES = {
@@ -91,7 +91,7 @@
       };
       const create = (number, color) => {
         for (let i = 0; i < number; i++) {
-          atoms.push(atom(random()+(canvas.width / 4), random(), color));
+          atoms.push(atom(random()+(canvas.width / 5), random(), color));
         }
       };
       const applyRules = () => {
@@ -159,7 +159,7 @@
         }
         requestAnimationFrame(update);
       };
-      
+
       update();
     </script>
     <div id="div1">

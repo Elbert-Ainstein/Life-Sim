@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.canvas {
-    height: 700px;
-    width: 1400px;
+canvas {
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+
+    color: #fff;
 }

@@ -6,7 +6,7 @@
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <canvas id="life" height="1600" width="2560">
+    <canvas id="life" height="1700" width="1600">
     </canvas>
     <script>
       const RULES = {
@@ -82,6 +82,10 @@
         m.fillStyle = c;
         m.fillRect(x, y, s, s);
       };
+      const drawCanvas  = (x, y, c, w, h) => {
+        m.fillStyle = c;
+        m.fillRect(x, y, w, h);
+      }
       const atoms = [];
       const atom = (x, y, c) => {
         return { x: x, y: y, vx: 0, vy: 0, color: c };
@@ -91,7 +95,7 @@
       };
       const create = (number, color) => {
         for (let i = 0; i < number; i++) {
-          atoms.push(atom(random()+(canvas.width / 5), random(), color));
+          atoms.push(atom(random(), random(), color));
         }
       };
       const applyRules = () => {
@@ -153,7 +157,7 @@
       update = () => {
         applyRules();
         m.clearRect(0, 0, canvas.width, canvas.height);
-        draw(0, 0, "black", canvas.width);
+        drawCanvas(0, 0, "black", canvas.width, canvas.height);
         for (i = 0; i < atoms.length; i += 1) {
           draw(atoms[i].x, atoms[i].y, atoms[i].color, 3);
         }
@@ -161,9 +165,10 @@
       };
 
       update();
+      gui();
     </script>
     <div id="div1">
-
+      
     </div>
 </body>
 </html>

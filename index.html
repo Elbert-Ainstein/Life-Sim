@@ -150,10 +150,10 @@
         const currentDiv = document.getElementById("div1");
         document.body.insertBefore(newDiv, currentDiv);
       }
-      create(500, "yellow");
-      create(500, "red");
-      create(456, "blue");
-      create(900, "white");
+      create(500*2, "yellow");
+      create(500*2, "red");
+      create(456*2, "blue");
+      create(900*2, "white");
       update = () => {
         applyRules();
         m.clearRect(0, 0, canvas.width, canvas.height);
@@ -168,7 +168,7 @@
       gui();
     </script>
     <div id="div1">
-      
+      This is the main web content.
     </div>
 </body>
 </html>

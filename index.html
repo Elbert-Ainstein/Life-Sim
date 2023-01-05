@@ -9,70 +9,70 @@
     <canvas id="life" height="1700" width="1600">
     </canvas>
     <script>
-      const RULES = {
-        white: {
-          white: -0.365,
-          red: 0.63,
-          yellow: 0.365,
-          blue: -0.34,
-        },
-        red: {
-          white: -0.63,
-          red: -0.295,
-          yellow: 0.31,
-          blue: -0.09,
-        },
-        yellow: {
-          white: -0.695,
-          red: 0.04,
-          yellow: 0.04,
-          blue: -0.5,
-        },
-        blue: {
-          white: 0.18,
-          red: -0.53,
-          yellow: 0.685,
-          blue: -0.5,
-        },
-      };
-
       // const RULES = {
-      //   green: {
-      //     green: Math.random() * 2 - 1,
-      //     red: Math.random() * 2 - 1,
-      //     yellow: Math.random() * 2 - 1,
-      //     blue: Math.random() * 2 - 1,
-      //     white: Math.random() * 2 - 1,
+      //   white: {
+      //     white: -0.365,
+      //     red: 0.63,
+      //     yellow: 0.365,
+      //     blue: -0.34,
       //   },
       //   red: {
-      //     green: Math.random() * 2 - 1,
-      //     red: Math.random() * 2 - 1,
-      //     yellow: Math.random() * 2 - 1,
-      //     blue: Math.random() * 2 - 1,
-      //     white:  Math.random() * 2 - 1,
+      //     white: -0.63,
+      //     red: -0.295,
+      //     yellow: 0.31,
+      //     blue: -0.09,
       //   },
       //   yellow: {
-      //     green: Math.random() * 2 - 1,
-      //     red: Math.random() * 2 - 1,
-      //     yellow: Math.random() * 2 - 1,
-      //     blue: Math.random() * 2 - 1,
-      //     white: Math.random() * 2 - 1,
+      //     white: -0.695,
+      //     red: 0.04,
+      //     yellow: 0.04,
+      //     blue: -0.5,
       //   },
       //   blue: {
-      //     green: Math.random() * 2 - 1,
-      //     red: Math.random() * 2 - 1,
-      //     yellow: Math.random() * 2 - 1,
-      //     blue: Math.random() * 2 - 1,
-      //     white: Math.random() * 2 - 1,
+      //     white: 0.18,
+      //     red: -0.53,
+      //     yellow: 0.685,
+      //     blue: -0.5,
       //   },
-      //   white: {
-      //     green: Math.random() * 2 - 1,
-      //     red: Math.random() * 2 - 1,
-      //     yellow: Math.random() * 2 - 1,
-      //     blue: Math.random() * 2 - 1,
-      //     white: Math.random() * 2 - 1,
-      //   }
       // };
+
+      const RULES = {
+        green: {
+          green: Math.random() * 2 - 1,
+          red: Math.random() * 2 - 1,
+          yellow: Math.random() * 2 - 1,
+          blue: Math.random() * 2 - 1,
+          white: Math.random() * 2 - 1,
+        },
+        red: {
+          green: Math.random() * 2 - 1,
+          red: Math.random() * 2 - 1,
+          yellow: Math.random() * 2 - 1,
+          blue: Math.random() * 2 - 1,
+          white:  Math.random() * 2 - 1,
+        },
+        yellow: {
+          green: Math.random() * 2 - 1,
+          red: Math.random() * 2 - 1,
+          yellow: Math.random() * 2 - 1,
+          blue: Math.random() * 2 - 1,
+          white: Math.random() * 2 - 1,
+        },
+        blue: {
+          green: Math.random() * 2 - 1,
+          red: Math.random() * 2 - 1,
+          yellow: Math.random() * 2 - 1,
+          blue: Math.random() * 2 - 1,
+          white: Math.random() * 2 - 1,
+        },
+        white: {
+          green: Math.random() * 2 - 1,
+          red: Math.random() * 2 - 1,
+          yellow: Math.random() * 2 - 1,
+          blue: Math.random() * 2 - 1,
+          white: Math.random() * 2 - 1,
+        }
+      };
 
       console.log(JSON.stringify(RULES));
 
@@ -143,13 +143,6 @@
           }
         }
       };
-      const gui = () => {
-        const newDiv = document.createElement("div");
-        const newContent = document.createTextNode("Hi there and greetings!");
-        newDiv.appendChild(newContent);
-        const currentDiv = document.getElementById("div1");
-        document.body.insertBefore(newDiv, currentDiv);
-      }
       create(500*2, "yellow");
       create(500*2, "red");
       create(456*2, "blue");
@@ -165,10 +158,21 @@
       };
 
       update();
-      gui();
+
+      // var rangeslider = document.getElementById("sliderRange");
+      //   var output = document.getElementById("demo");
+      //   output.innerHTML = rangeslider.value;
+
+      //   rangeslider.oninput = function() {
+      //     output.innerHTML = this.value;
+      //   }
     </script>
-    <div id="div1 title">
-      This is the main web content.
-    </div>
+    <!-- <div class="body">
+      <div class="rangeslider">
+        <input type="range" min="1" max="100" value="10"
+                       class="myslider" id="sliderRange">
+        <p>Value: <span id="demo"></span></p>
+      </div>
+    </div> -->
 </body>
 </html>
